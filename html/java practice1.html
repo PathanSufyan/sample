@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function getFullName(fname){
+
+    }
+    function f(){
+        var fName =document.getElementById('firstname').value;
+        var lName =document.getElementById('lastname').value;
+        var mName = document.getElementById('middle').value;
+        var fullName= document.getElementById('fulname').value ;
+        fullName= `${fName} ${mName} ${lName}`
+    }
+</script>
+<body>
+    first name:<input id="firstname" type="text">
+    Middle Name: <input type="text" id="middle">
+    last name:<input id="lastname" type="text">
+    <br><br><br><br><br>
+    <textarea rows="2" cols="40" placeholder="my full name" type="text" id="fulname" ></textarea><br>
+    <input type="button" value="full name" onclick="f()">
+
+</body>
+</html>
